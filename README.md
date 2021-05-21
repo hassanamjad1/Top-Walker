@@ -17,12 +17,6 @@ APP GROUP PROJECT - README
    * Final cash price which each user contributes to as a final reward. 
 * Session member with the most amount of steps and Calorie Burn would be consider as the "Winner" of the session and earn the achievemnt badge as well as take the final Reward Home.
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='http://g.recordit.co/unt7sA3jkg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category: Health and Fitness**

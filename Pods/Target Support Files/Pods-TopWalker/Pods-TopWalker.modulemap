@@ -1,0 +1,6 @@
+framework module Pods_TopWalker {
+  umbrella header "Pods-TopWalker-umbrella.h"
+
+  export *
+  module * { export * }
+}
