@@ -24,6 +24,10 @@
 		84E5639A2632F36A009D152E /* TopWalkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E563992632F36A009D152E /* TopWalkerUITests.swift */; };
 		8E733840B2C1DA7B6070DFFC /* Pods_TopWalker_TopWalkerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBC13B834F706623D63984E /* Pods_TopWalker_TopWalkerUITests.framework */; };
 		CDFBCADCCCC0315AE8DF002E /* Pods_TopWalkerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DEDCBE8971442F0084039A /* Pods_TopWalkerTests.framework */; };
+		DF2AD261266126FE00223A45 /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AD260266126FE00223A45 /* SessionCell.swift */; };
+		DF2AD2652661288A00223A45 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AD2642661288A00223A45 /* SessionViewController.swift */; };
+		DF2AD26726612B6900223A45 /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AD26626612B6900223A45 /* AddSessionViewController.swift */; };
+		DF2AD2692661332B00223A45 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AD2682661332B00223A45 /* TimelineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		84E5639B2632F36A009D152E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3437A587CDA46C062548AD /* Pods-TopWalkerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopWalkerTests.release.xcconfig"; path = "Target Support Files/Pods-TopWalkerTests/Pods-TopWalkerTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7DEDCBE8971442F0084039A /* Pods_TopWalkerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopWalkerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2AD260266126FE00223A45 /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
+		DF2AD2642661288A00223A45 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		DF2AD26626612B6900223A45 /* AddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
+		DF2AD2682661332B00223A45 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E7DD9740F8D118ED14FB82EA /* Pods-TopWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopWalker.debug.xcconfig"; path = "Target Support Files/Pods-TopWalker/Pods-TopWalker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +162,10 @@
 				844588412649B5B8001005F7 /* FriendCell.swift */,
 				848E036C2653CB3000334D16 /* AddFriendViewController.swift */,
 				848E03742656D31500334D16 /* UserProfileViewController.swift */,
+				DF2AD260266126FE00223A45 /* SessionCell.swift */,
+				DF2AD2642661288A00223A45 /* SessionViewController.swift */,
+				DF2AD26626612B6900223A45 /* AddSessionViewController.swift */,
+				DF2AD2682661332B00223A45 /* TimelineViewController.swift */,
 			);
 			path = TopWalker;
 			sourceTree = "<group>";
@@ -425,12 +437,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				848E036D2653CB3000334D16 /* AddFriendViewController.swift in Sources */,
+				DF2AD26726612B6900223A45 /* AddSessionViewController.swift in Sources */,
 				844588422649B5B8001005F7 /* FriendCell.swift in Sources */,
+				DF2AD261266126FE00223A45 /* SessionCell.swift in Sources */,
 				84B7D7382638509300F441FF /* SignupViewController.swift in Sources */,
 				847DF56A26381FA30031A839 /* LoginViewController.swift in Sources */,
 				84E5637C2632F366009D152E /* ViewController.swift in Sources */,
 				84E563782632F366009D152E /* AppDelegate.swift in Sources */,
 				847DF56F263820030031A839 /* FriendlistViewController.swift in Sources */,
+				DF2AD2692661332B00223A45 /* TimelineViewController.swift in Sources */,
+				DF2AD2652661288A00223A45 /* SessionViewController.swift in Sources */,
 				848E03752656D31500334D16 /* UserProfileViewController.swift in Sources */,
 				84E5637A2632F366009D152E /* SceneDelegate.swift in Sources */,
 			);
