@@ -129,6 +129,11 @@ APP GROUP PROJECT - README
 
 ### [BONUS] Interactive Prototype
 
+### GIF Walkthrough
+
+App Icon & Lauch Screen /new User :
+<img src='https://media.giphy.com/media/eVn4DvJ1CjwVXH5h6N/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Schema 
 [This section will be completed in Unit 9]
 
