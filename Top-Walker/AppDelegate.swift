@@ -1,12 +1,12 @@
 //
 //  AppDelegate.swift
-//  Top-Walker
+//  TopWalker
 //
-//  Created by Hassan Amjad on 6/2/21.
+//  Created by Hassan Amjad on 4/23/21.
 //
 
 import UIKit
-
+import Parse
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // --- Copy this only
+        
+        let parseConfig = ParseClientConfiguration {
+                $0.applicationId = "rJjQdTjhZ5k6qn9gI8YSUEUY3bT1IoLySdDX4efH" // <- UPDATE  TopW
+                $0.clientKey = "vCeInoSrVn0KL9DjcKT4mUvRjsC0KU3mRd6vEK7B" // <- UPDATE      TopW
+                $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
+        
+        // --- end copy
+        
         return true
     }
 

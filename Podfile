@@ -1,20 +1,20 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Top-Walker' do
+target 'TopWalker' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Top-Walker
+  # Pods for TopWalker
   pod "AlamofireImage"
   pod "Parse"
 
-  target 'Top-WalkerTests' do
+  target 'TopWalkerTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'Top-WalkerUITests' do
+  target 'TopWalkerUITests' do
     # Pods for testing
   end
 
