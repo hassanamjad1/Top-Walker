@@ -1,67 +1,59 @@
 //
-//  FriendlistViewController.swift
+//  SessionViewController.swift
 //  TopWalker
 //
-//  Created by Hassan Amjad on 4/27/21.
+//  Created by Dong Kelly on 5/28/21.
 //
 
 import UIKit
 import Parse
 
-class FriendlistViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
-
+class SessionViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
     
-    @IBOutlet weak var numOfFriends: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    
-    var friends = [PFObject]()
-    
-    
+    var sessions = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.delegate = self
         tableView.dataSource = self
+
         // Do any additional setup after loading the view.
-        
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        let query = PFQuery(className: "Friends")
+        let query = PFQuery(className: "Sessions")
         query.includeKey("author")
         query.limit = 20
 
 
-        query.findObjectsInBackground{ (friends, error) in
-            if friends != nil {
-                self.friends = friends!
+        query.findObjectsInBackground{ (sessions, error) in
+            if sessions != nil {
+                self.sessions = sessions!
                 self.tableView.reloadData()
             }
-            self.numOfFriends.text = "\(friends!.count)"
         }
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
-
+        return sessions.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SessionCell") as! SessionCell
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell") as! FriendCell
+        let session = sessions[indexPath.row]
 
-        let friend = friends[indexPath.row]
-
-        let user = friend["author"] as! PFUser
-        cell.usernamme.text = friend["username"] as? String
+        let user = session["author"] as! PFUser
+        cell.sessionId.text = session["sessionId"] as? String
         
 
         return cell
     }
-
+    
 
     /*
     // MARK: - Navigation

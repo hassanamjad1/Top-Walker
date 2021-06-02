@@ -15,6 +15,13 @@ class AddFriendViewController: UIViewController, UIImagePickerControllerDelegate
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        userNameField.layer.cornerRadius = 15
+        userNameField.layer.borderColor = UIColor.gray.withAlphaComponent(0.5).cgColor
+        userNameField.layer.borderWidth = 1
+        userNameField.clipsToBounds = true
+        
+        userNameField.attributedPlaceholder = NSAttributedString(string: "ENTER USERNAME ",
+                                     attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
     }
 
     
@@ -26,7 +33,7 @@ class AddFriendViewController: UIViewController, UIImagePickerControllerDelegate
         
         let friend = PFObject(className: "Friends")
 
-        friend["username"] = userNameField.text!
+        friend["username"] = "@" + userNameField.text!
         friend["author"] = PFUser.current()
 
         friend.saveInBackground() { (success,error) in
