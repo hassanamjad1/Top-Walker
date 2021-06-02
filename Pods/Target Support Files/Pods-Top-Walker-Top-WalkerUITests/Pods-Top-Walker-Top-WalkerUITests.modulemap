@@ -1,0 +1,6 @@
+framework module Pods_Top_Walker_Top_WalkerUITests {
+  umbrella header "Pods-Top-Walker-Top-WalkerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAFFB8E885E2EDFD55062DE694143593"
-               BuildableName = "Parse-Parse.bundle"
-               BlueprintName = "Parse-Parse"
+               BlueprintIdentifier = "F73C63AB29AAB90DE7805C63D3E736FD"
+               BuildableName = "Pods-Top-Walker.framework"
+               BlueprintName = "Pods-Top-Walker"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
