@@ -11,6 +11,7 @@ import Parse
 class FriendlistViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
 
     
+    @IBOutlet weak var numOfFriends: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -24,6 +25,7 @@ class FriendlistViewController: UIViewController, UITableViewDelegate,  UITableV
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -38,6 +40,7 @@ class FriendlistViewController: UIViewController, UITableViewDelegate,  UITableV
                 self.friends = friends!
                 self.tableView.reloadData()
             }
+            self.numOfFriends.text = "\(friends!.count)"
         }
     }
 
