@@ -1,13 +1,13 @@
 //
-//  TopWalkerUITests.swift
-//  TopWalkerUITests
+//  Top_WalkerUITests.swift
+//  Top-WalkerUITests
 //
-//  Created by Hassan Amjad on 4/23/21.
+//  Created by Hassan Amjad on 6/2/21.
 //
 
 import XCTest
 
-class TopWalkerUITests: XCTestCase {
+class Top_WalkerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC123F9D722FFAD55D4C60EAC995CA18"
-               BuildableName = "Pods_TopWalkerTests.framework"
-               BlueprintName = "Pods-TopWalkerTests"
+               BlueprintIdentifier = "8BA90485A1ABDF6D37BF36DE681CDA98"
+               BuildableName = "Pods_Top_WalkerTests.framework"
+               BlueprintName = "Pods-Top-WalkerTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

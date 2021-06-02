@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TopWalkerVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TopWalkerVersionString[];
+FOUNDATION_EXPORT double Pods_Top_WalkerTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Top_WalkerTestsVersionString[];
 
